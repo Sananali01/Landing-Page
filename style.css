@@ -78,7 +78,7 @@ html,body
     text-decoration: none;
 }
 
-.card-img-top {
+.card-image-top {
     width: 100%;
     height: 300px; /* Adjust height as needed */
     object-fit: cover; /* Ensures images maintain aspect ratio */
@@ -89,8 +89,22 @@ html,body
 .filter{
     font-size: 28px;
 }
+.email-letter {
+    display: block;
+    width: 85%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid black;
+}
 .dropdown{
     margin-left: 103px;
+}
+.form-control{
+    border: 1px solid black;
+    width: 80%;
 }
 .drops{
     background: white;
@@ -104,6 +118,7 @@ html,body
     padding: 6px;
     color: white;
     border-radius: 10px;
+    width: max-content;
     border: none;
 }
 .texxt{
@@ -129,11 +144,40 @@ html,body
 .fab.fa-instagram {
     color: #C13584; /* Instagram pink */
 }
+.fa.fa-star {
+    height: 27px;
+    width: 29px;
+    padding: 2px;
+    background: #00B67A;
+    color: #ffffff;
+}
 
+
+@media screen and (min-width: 760px) and (max-width: 1380px) {
+    .btn1{
+        margin-bottom: 6px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .testimonial-row{
+        display: contents;
+    }
+    .reviews{
+        column-gap: 20px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      margin-top: 20px;
+    }
+}
 
 @media screen and (min-width: 840px) and (max-width: 990px) {
     .search_input-large{
         width: 700px;
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      margin-top: 20px;
     }
 }
 
@@ -141,8 +185,21 @@ html,body
     .search_input-large{
         width: 600px;
     }
+    .btn1{
+        padding: 10px;
+
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      margin-top: 20px;
+    }
 }
+
 @media (max-width: 649px) {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      margin-top: 20px;
+    }
     .search_input-large{
         width:auto;
     }
@@ -162,3 +219,38 @@ html,body
         font-size: 16px;
     }
 }
+.testimonial-slider {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .testimonial-slide {
+    text-align: center;
+  }
+  
+  .carousel-inner {
+    text-align: center;
+  }
+  
+  .rating {
+    color: orange;
+  }
+  
+  .checked {
+    color: orange;
+  }
+  .reviews{
+
+    justify-content: center;
+  }
+  .review-text{
+    font-size: x-large;
+    font-weight: 500;
+  }
+
+
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: invert(100%);
+  }
